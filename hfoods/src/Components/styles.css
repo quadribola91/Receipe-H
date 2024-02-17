@@ -1,0 +1,33 @@
+/* styles.css (or your preferred stylesheet) */
+
+.container {
+  box-shadow: 0 4px 8px rgba(164, 69, 69, 0.1); /* Add a box shadow to the entire container */
+  background-color: rgb(255, 252, 252);
+  width: 100%;
+}
+
+.food-item-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 2, 0.4); /* Add a box shadow to each FoodItem container */
+  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+  background-color: rgb(255, 255, 255);
+  width: 100%; /* Ensure the image takes up 100% of the container width */
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 400px; /* Set a maximum height for the images (adjust as needed) */
+  border-radius: 5px;
+}
+/* Set fixed dimensions for the images */
+.food-item-container img {
+  width: 100%; /* Ensure the image takes up 100% of the container width */
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 200px; /* Set a maximum height for the images (adjust as needed) */
+}
+
+/* Make the grid responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Change to a single column layout on small devices */
+  }
+}

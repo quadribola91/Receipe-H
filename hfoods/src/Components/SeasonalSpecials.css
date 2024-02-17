@@ -1,0 +1,31 @@
+/* SeasonalSpecials.css */
+
+.seasonal-container {
+  overflow: hidden;
+}
+
+.seasonal-section {
+  overflow-x: hidden;
+}
+
+.seasonal-carousel {
+  display: flex;
+  transition: transform 1s cubic-bezier(0.5, 1, 0.89, 1); /* Adjust timing function as needed */
+  perspective: 1000px;
+}
+
+.seasonal-card {
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  transform: translateX(100%);
+  animation: flipIn 1s forwards ease-in-out; /* Adjust timing function as needed */
+}
+
+@keyframes flipIn {
+  from {
+    transform: translateX(100%) rotateY(90deg);
+  }
+  to {
+    transform: translateX(0) rotateY(0deg);
+  }
+}

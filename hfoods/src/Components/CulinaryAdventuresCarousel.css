@@ -1,0 +1,17 @@
+/* CulinaryAdventuresCarousel.css */
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text {
+  animation: moveLeft 10s linear infinite; /* Adjust duration as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  display: inline-block; /* Maintain inline layout */
+}
