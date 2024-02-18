@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const DropdownMenu = () => {
   return (
-    <div className="absolute mt-2 bg-red-200 rounded-lg shadow-lg top-6 ">
+    <div className="absolute mt-2 bg-red-800 rounded-lg shadow-lg top-6 ">
       <div className="py-5 px-2">
         <Link
           to="/foodgrid2"
