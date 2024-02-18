@@ -20,7 +20,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className="bg-red-200 top-0 left-0 z-50 fixed mb-40px  w-full">
+    <div className="bg-red-800 top-0 left-0 z-50 fixed mb-40px  w-full">
       <div className="max-w-7xl mx-auto px-2">
         <div className="lg:flex lg:justify-between lg:items-center lg:py-4">
           <div className="flex justify-between items-center py-4">
